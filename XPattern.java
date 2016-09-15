@@ -11,6 +11,7 @@ public class XPattern {
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
+		System.out.println("Enter any non-negative ODD Integer greater than 3 : ");
 		br = new BufferedReader(new InputStreamReader(System.in));
 		int  rightSide ;
 		
