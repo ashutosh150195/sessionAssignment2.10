@@ -11,6 +11,7 @@ public class PrintPattern {
 	
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
+		System.out.println("Enter any non-negative ODD Integer greater than 3 : ");
 		br = new BufferedReader(new InputStreamReader(System.in));
 		input = br.readLine();
 		int counter = 0;
@@ -21,17 +22,17 @@ public class PrintPattern {
 			}
 			for (int j = 0; j < 2*i+1; j++) {
 				if (j < (2*i+1)/2) {
-					character = 65 + counter ;
+					character = 97 + counter ;
 					System.out.print((char)character);
 					++counter;
 				} else {
-					character = 65 + counter ;
+					character = 97 + counter ;
 					System.out.print((char)character);
 					--counter;
 				}
 			}
 			System.out.println();
-			character = 65 ;
+			character = 97 ;
 			counter = 0;
 		}
 		int temp = 0 ;
@@ -42,17 +43,17 @@ public class PrintPattern {
 			}
 			for (int j = 0; j < Integer.parseInt(input)- 2*temp; j++) {
 				if (j < (Integer.parseInt(input)- 2*temp)/2) {
-					character = 65 + counter ;
+					character = 97 + counter ;
 					System.out.print((char)character);
 					++counter;
 				} else {
-					character = 65 + counter ;
+					character = 97 + counter ;
 					System.out.print((char)character);
 					--counter;
 				}
 			}
 			System.out.println();
-			character = 65 ;
+			character = 97 ;
 			counter = 0;
 		}
 
